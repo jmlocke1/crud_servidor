@@ -6,3 +6,6 @@ Instrucciones de despliegue en desarrollo
 	- npm init
 	- npm i -D nodemon
 	- npm i express mongoose dotenv
+
+Poner en marcha el servidor
+	npm run dev
