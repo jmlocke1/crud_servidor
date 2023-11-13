@@ -6,10 +6,11 @@ const app = express();
 // Conectamos a la base de datos
 conectarDB();
 
+app.use('/api/productos', require('./routes/producto'));
 // Definimos ruta principal
-app.get('/', (req, res) => {
-	res.send("Hola Mundo desde el servidor.");
-});
+// app.get('/', (req, res) => {
+// 	res.send("Hola Mundo desde el servidor.");
+// });
 
 app.listen(4000, () => {
 	console.log("El servidor está corriendo perfectamente");
